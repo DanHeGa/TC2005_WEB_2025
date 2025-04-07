@@ -3,24 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" 
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Home</title>
     
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Login</a></li> <!-- Volvera a index porque por degfault e el que siempre vuelve si pones asi -->
-            <li><a href="#">Home</a></li>
-            <li><a href="./profile.html">Profile</a></li>
-            <li><a href="./tags.html">Tags</a></li>
-            
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">MyPage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Index</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./profile.html">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./tags.html">Tags</a>
+          </li>
         </ul>
-    </nav>
-    <h1>Home</h1>
-    <img src="../images/perro.jpg" alt="">
-    <p>Lorem ipsum <strong> dolor </strong> sit amet consectetur adipisicing elit. Minima maxime, consequuntur ex cum sit quo labore eius ipsam nihil inventore </p>
-    <br />
-    <p>exercitationem cupidita<em>te expedita tempore haru</em>m animi odit aliquid est deserunt?</p>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
+    <h1 id="homeTitle">Home</h1>
+    <div id="dog_container">
+        <img id="chihuahua" src="../images/perro.jpg" alt="Cute dog">
+        <p class="dogLorem">Lorem ipsum <strong> dolor </strong> sit amet consectetur adipisicing elit. Minima maxime, consequuntur ex cum sit quo labore eius ipsam nihil inventore </p>
+        <br />
+        <p class="dogLorem">exercitationem cupidita<em>te expedita tempore haru</em>m animi odit aliquid est deserunt?</p>
+      </div>
+      <script src="../styles/bootstrap.bundle.min.js" 
+            integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" 
+            crossorigin="anonymous">
+    </script>
 </body>
 </html>

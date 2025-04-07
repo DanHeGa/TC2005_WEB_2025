@@ -1,0 +1,76 @@
+a {
+    margin: 5px 10px 20px 30px;
+}
+
+
+#tags_id:hover { /* #for id's */
+    color: rgb(255, 0, 255);
+}
+
+#forms {
+    background-color: lightslategrey;
+    display: flex;
+    gap: 30px;
+    width: 350px;
+    border-radius: 15px;
+    padding: 20px;
+    margin: auto; /* Centra el div horizontalmente */
+    position: absolute; /* Permite centrarlo en toda la página */
+    top: 50%; /* Posiciona el div en el centro vertical */
+    left: 50%; /* Posiciona el div en el centro horizontal */
+    transform: translate(-50%, -50%);
+}
+
+#log_button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+#homeTitle {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 45px;
+}
+
+#dog_container {
+    display: flex;
+    align-items:flex-start;
+    
+    gap: 30px;
+    margin: 20px 50px;
+}
+
+#chihuahua {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 20px solid cadetblue;
+}
+
+.dogLorem {
+    flex: 1;
+    background-color: cadetblue;
+    margin: 5px 10px 20px 30px;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+}
+
+.profile{
+    max-width: 600px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#profileImg{
+    max-width: 300px;
+    width: auto;
+}
+

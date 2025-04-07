@@ -3,17 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../styles/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" 
+          crossorigin="anonymous">
+          
+    <link rel="stylesheet" href="../styles/style.css">
     <title>TC2005B</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Login</a></li>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="./tags.html">Tags</a></li>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">MyPage</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Index</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./tags.html">Tags</a>
+          </li>
         </ul>
-    </nav>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="profile m-auto">
     <header>
         <h1>Web Page</h1>
     </header>
@@ -25,8 +52,13 @@
         Mira mi <a href="https://www.linkedin.com/in/daniela-herrera-gar/">LinkedIn</a>!
         <br/>
         <h3>Esta soy yo</h3>
-        <img src="../images/me.jpeg">
-    </p>
+        <img id="profileImg" src="../images/me.jpeg">
+    </p>  
+  </div>
     
+  <script src="../styles/bootstrap.bundle.min.js" 
+          integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" 
+          crossorigin="anonymous">
+  </script>
 </body>
 </html>
