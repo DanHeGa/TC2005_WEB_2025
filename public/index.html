@@ -26,38 +26,36 @@
                 <a class="nav-link active" aria-current="page" href="#">Index</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link invalid" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Profile</a>
+                <a class="nav-link invalid" href="#">Profile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Tags</a>
+                <a class="nav-link invalid" href="#">Tags</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
-    <div id="forms">
-      <header id="log"> <h1>Login</h1></header>
-        <form action="">
-          <label for="">Username</label>
-          <input type="text" name="" id="user_write_log" placeholder="Write"/>
-          <label for=""> Password</label>
-          <input type="text" name="" id="pass_write_log" placeholder="Write" /> 
-          <input type="button" value="Login" id="log_button"/>
-        </form>
-    </div>
+    <form id="forms">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Username</label>
+        <input type="text" class="form-control" id="user_write_log" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="pass_write_log">
+      </div>
+      <input type="button" class="btn btn-primary" id="log_button" value="Login">
+    </form>
+
     
     <!-- El script generalmente va al final del body porque tiene código fuera de funciones que se ejecutará -->
     <script src="./styles/bootstrap.bundle.min.js" 
             integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" 
             crossorigin="anonymous">
     </script>
-    <script src="/scripts/index.js"> </script>
+    <script src="./scripts/index.js"> </script>
 </body>
 </html>

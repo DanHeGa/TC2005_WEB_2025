@@ -2,8 +2,8 @@ const logout = document.getElementById("logout");
 
 window.onload = () => {
     if(sessionStorage.name){
-        const name = document.getElementById("Nombre");
-        name.innerText = "Name: " + sessionStorage.name;
+        const name = document.querySelector(".Nombre");
+        name.innerText = "Soy " + sessionStorage.name;
     } else {
         window.location.href = "../index.html";
     }

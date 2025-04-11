@@ -9,6 +9,7 @@ console.log("hola desde javascript");
 const boton = document.getElementById("log_button");
 const username = document.getElementById("user_write_log");
 const pass = document.getElementById("pass_write_log");
+const noCredencialsNav = document.querySelectorAll(".invalid");
 
 //validación de credenciales
 const login = () => {
@@ -23,4 +24,11 @@ const login = () => {
     }
 }
 
+const noIdPress = () => {
+    alert("No credencials in use");
+}
+
+noCredencialsNav.forEach((ele) => {
+    ele.addEventListener("click", noIdPress);
+})
 boton.addEventListener("click", login);

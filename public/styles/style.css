@@ -4,16 +4,18 @@ a {
 
 
 #tags_id:hover { /* #for id's */
-    color: rgb(255, 0, 255);
+    color: rgba(0, 89, 255, 0.87);
+}
+
+#strongLorem:hover {
+    color: rgb(255, 0, 0);
 }
 
 #forms {
-    background-color: lightslategrey;
-    display: flex;
-    gap: 30px;
-    width: 350px;
-    border-radius: 15px;
-    padding: 20px;
+    background-color:lightslategray;
+    border-radius: 20px;
+    padding: 35px;
+    padding-bottom: 50px;
     margin: auto; /* Centra el div horizontalmente */
     position: absolute; /* Permite centrarlo en toda la página */
     top: 50%; /* Posiciona el div en el centro vertical */
@@ -72,5 +74,41 @@ a {
 #profileImg{
     max-width: 300px;
     width: auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+/* Ajustar el ancho y padding de los list-group-items */
+#list-example{
+    max-width: 200px; /* Ancho máximo reducido */
+    margin: 0 0 5px 0; /* Solo margen inferior */
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+#ProfileTitle {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 45px;
+    margin-bottom: 0px;
+}
+
+.col-8 {
+    padding: 0 0 0 30px; /* Más padding izquierdo */
+    margin: 0;
+    max-width: 700px; /* Ancho máximo controlado */
+    text-align: left; /* Alineación izquierda */
+    margin-right: auto; /* Empuja hacia la izquierda */
+    margin-left: 0; /* Elimina margen izquierdo automático */
+}
+
+.scrollspy-example h4{
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.scrollspy-example p{
+    margin-bottom: 1.2rem;
 }
 

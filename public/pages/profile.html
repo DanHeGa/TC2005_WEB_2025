@@ -32,31 +32,38 @@
           <li class="nav-item">
             <a class="nav-link" href="./tags.html">Tags</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" id="logout">Log out</a>
-          </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <a class="nav-link" href="#" id="logout">Log out</a>
+        
       </div>
     </div>
   </nav>
-  <div class="profile m-auto">
-    <header>
-        <h1>Web Page</h1>
+
+  <div class="row">
+    <header id="ProfileTitle">
+      <h1>Profile</h1>
     </header>
-    <h2 id="Nombre"> Mi nombre es Daniela Herrera García</h2>
-    <p>Estudio Ingeniería en Tecnologías Computacionales
-        <br/>
-        Soy de Durango, Dgo, Mx
-        <br/>
-        Mira mi <a href="https://www.linkedin.com/in/daniela-herrera-gar/">LinkedIn</a>!
-        <br/>
-        <h3>Esta soy yo</h3>
-        <img id="profileImg" src="../images/me.jpeg">
-    </p>  
+    <div class="col-4">
+      <div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">¿Who am I?</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">My career</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">Know more!</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">Me RN</a>
+      </div>
+    </div>
+    <div class="col-8">
+      <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+        <h4 id="list-item-1" class="Nombre">Item 1</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, a iure facere autem accusamus voluptate eum sit, esse ipsum nulla minima cupiditate officiis facilis itaque voluptatem ratione, provident debitis molestiae!</p>
+        <h4 id="list-item-2">¿Why do I study this?</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores obcaecati, provident quisquam temporibus repellendus fugiat commodi debitis quis harum? Excepturi impedit neque similique quos, dolore iure beatae enim odit reiciendis.</p>
+        <h4 id="list-item-3">Visit my other socials!</h4>
+        <p><a href="https://www.linkedin.com/in/daniela-herrera-gar/">LinkedIn</a></p>
+        <h4 id="list-item-4">Here's a photo of me right now!</h4>
+        <!-- <p>...</p> -->
+        <img id="profileImg" class="rounded mx-auto d-block" src="../images/me.jpeg">
+      </div>
+    </div>
   </div>
     
   <script src="../styles/bootstrap.bundle.min.js" 
